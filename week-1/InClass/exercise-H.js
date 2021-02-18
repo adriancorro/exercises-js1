@@ -1,10 +1,9 @@
-function greetingFcn(name, greetingStart) {
-    const greeting = greetingStart + name; 
-    return greeting;
+function functionSumar(number_one, number_two, number_three, accion  , nombre  ) {
+    let suma = number_one + number_two + number_three;
+    let texto =  nombre + accion + suma // unimos los string nombre + accion y traemos el resultado de la variable suma que una operacion aritmetica 
+    return texto;
 }
 
-// Function invocation
-const resultGreeting = "Hello, my name iss Alexandra";
-console.log(resultGreeting);
-console.log(greetingFcn("Hello, my name is ", "Alexandra ")); // ?
 
+
+console.log(`${functionSumar(100 , 200 , 300, "El resulatado de la suma es: " ,  "Adrian " )}`); 
