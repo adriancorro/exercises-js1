@@ -28,7 +28,7 @@ function createCreeting(name, age) {
 ## Expected result
 
 ```
-Percentage students: 65%
+Percentage students: 65%  
 Percentage mentors: 35%
 ```
 
