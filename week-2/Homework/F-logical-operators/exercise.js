@@ -20,6 +20,43 @@ var cssLevelAbove5;
 var cssAndHtmlAbove5;
 var cssOrHtmlAbove5;
 
+function c1 (){
+  if ( htmlLevel >= 5) {
+    return htmlLevelAbove5 = htmlLevel >= 5;
+  }else{
+    return htmlLevelAbove5 = htmlLevel >= 5
+  }
+}
+
+function c2 (){
+  if (cssLevel >= 5 ){
+  return cssLevelAbove5 = cssLevel >= 5;
+  }else{
+    return cssLevelAbove5  = cssLevel >= 5;
+  }
+}
+
+function c3(){
+  if (htmlLevel && cssLevel >= 5  ){
+    return cssAndHtmlAbove5 = htmlLevel && cssLevel >= 5;
+  }else{
+    return cssAndHtmlAbove5 = htmlLevel && cssLevel >= 5;
+}
+}
+
+function c4(){
+  if(htmlLevel >= 5 ||  cssLevel  >= 5 ){
+    return cssOrHtmlAbove5 = htmlLevel >= 5 ||  cssLevel  >= 5;
+  }else{
+    return cssOrHtmlAbove5 = htmlLevel >= 5 ||  cssLevel  >= 5;
+  }
+}
+
+c1();
+c2();
+c3();
+c4();
+
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
@@ -27,8 +64,7 @@ var cssOrHtmlAbove5;
 console.log("Is Html knowledge above 5?", htmlLevelAbove5);
 console.log("Is CSS knowledge above 5?", cssLevelAbove5);
 console.log("Is Html And CSS knowledge above 5?", cssAndHtmlAbove5);
-console.log(
-  "Is either Html or CSS knowledge above 5?",
+console.log( "Is either Html or CSS knowledge above 5?",
   cssOrHtmlAbove5
 );
 

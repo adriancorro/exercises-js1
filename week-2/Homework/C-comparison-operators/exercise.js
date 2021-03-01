@@ -16,6 +16,13 @@ var personA = "Daniel";
 var personB = "Irina";
 var sameName; // finish this statement
 
+if (studentCount > mentorCount && roomMaxCapacity <= studentCount + mentorCount && personA != personB  ) {
+  moreStudentsThanMentors = true;
+  enoughSpaceInRoom= true;
+  sameName = false;
+}
+
+
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */

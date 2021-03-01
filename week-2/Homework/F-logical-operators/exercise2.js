@@ -5,7 +5,38 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(number){
+  if ( number <= 0 ){
+    return number =  number <= 0 ;
+  }else{
+    return number =  number <= 0 ;
+  }
+}
+
+function isBetween5and10(number2){
+  if ( number2 >= 5 &&  number2 <= 10 ){
+    return number2 = number2 >= 5 &&  number2 <= 10;
+  }else{
+    return number2 = number2 >= 5 &&  number2 <= 10;
+  }
+}
+
+function isShortName(name){
+  if (name.length <= 6 ){
+    return name = name.length <= 6;
+  }else{
+    return name = name.length <= 6;
+  }
+   
+}
+
+function startsWithD(nameD){
+  if (nameD.charAt(0) == "D" ){
+       return nameD = nameD.charAt(0) == "D";
+  }else{
+    return nameD = nameD.charAt(0) == "D";
+  }
+}
 
 /* 
   DO NOT EDIT BELOW THIS LINE

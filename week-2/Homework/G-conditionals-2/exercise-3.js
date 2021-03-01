@@ -9,7 +9,16 @@
 */
 
 function calculateGrade(mark) {
-
+  if (mark >= 80 ){
+    return mark  = "A";
+  }if (mark <= 80 && mark >= 60 ){
+    return mark  = "B";
+  }if (mark <= 60 && mark >= 50 ){
+    return mark  = "C";
+  }else{
+    return mark  = "F";
+  }
+    
 }
 
 /* 

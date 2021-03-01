@@ -5,11 +5,17 @@
 */
 
 function first(arr) {
-  return; // complete this statement
+  for (let i = 0; i < arr.length; i++) {
+  
+    return arr[0] ; // complete this statement
+  }
+    
+
 }
 
 function last(arr) {
-  return; // complete this statement
+console.log(` esto es:  ${arr.length}  `);
+  return arr[arr.length -1]; // complete this statement
 }
 
 /* 
