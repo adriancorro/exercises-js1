@@ -13,3 +13,11 @@ const daysOfWeek = [
   "Saturday",
   "Sunday",
 ];
+
+var filtered = daysOfWeek.filter(d => String(d).startsWith('T'));
+
+console.log(filtered);
+
+// expected output: true
+
+

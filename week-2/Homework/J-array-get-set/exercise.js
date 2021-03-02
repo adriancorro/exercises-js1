@@ -4,18 +4,20 @@
   Complete the functions below to get the first and last values from the array
 */
 
-function first(arr) {
-  for (let i = 0; i < arr.length; i++) {
+function first(parametro1) {
+
   
-    return arr[0] ; // complete this statement
-  }
+    return parametro1[0] ; // complete this statement
+  
     
 
 }
 
-function last(arr) {
-console.log(` esto es:  ${arr.length}  `);
-  return arr[arr.length -1]; // complete this statement
+/* La propiedad length de un objeto que es una instancia de tipo Array
+ establece o devuelve la cantidad de elementos en esa matriz. */
+
+function last(parametro2) {
+  return parametro2[parametro2.length -1]; // complete this statement
 }
 
 /* 

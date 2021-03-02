@@ -5,11 +5,11 @@
 
 */
 
-function isEmpty(arr) {
-  if (arr.length === 0  ){
-    return arr = (arr.length === 0 );
+function isEmpty(parametro) {
+  if (parametro.length === 0  ){
+    return parametro = (parametro.length === 0 );
   }else{
-    return arr = "false";
+    return parametro = (parametro.length === 0 );
   }
    // complete this statement
 }

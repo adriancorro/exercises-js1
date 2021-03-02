@@ -8,8 +8,16 @@
 
 let n = 10;
 
-function sumTillNum(num){
-	//your code here
+function sumTillNum(num){ 
+
+	let suma = [];
+	 num = 0
+	while (num <= 10){
+		suma.push(num);
+		num += 1;
+	}
+	return suma.join(" + ");
+	//your code here 
 }
 
 console.log("Sum from 0 to " + n + " is: " + sumTillNum(n));

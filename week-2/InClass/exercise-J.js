@@ -8,4 +8,4 @@ function secondMatchesAmy(array) {
   let names = ["Alex", "Amara", "Carlos"];
   let names2 = ["Ali", "Amy", "Naresh"];
   const result = secondMatchesAmy(names2);
-  console.log(result);
+  console.log(result); 
