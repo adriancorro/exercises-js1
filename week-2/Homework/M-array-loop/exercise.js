@@ -15,8 +15,12 @@ const daysOfWeek = [
 ];
 
 var filtered = daysOfWeek.filter(d => String(d).startsWith('T'));
+if (filtered != 0){
+  console.log(filtered != 0);
+}else{
+  console.log(filtered != 0);
+}
 
-console.log(filtered);
 
 // expected output: true
 

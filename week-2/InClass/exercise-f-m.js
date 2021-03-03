@@ -1,19 +1,19 @@
 function esMayuscula(letra){
-    let H = letra === letra.toUpperCase();
-    console.log(H);
-    return H ; 
+     
+   console.log(letra != letra.toUpperCase());
+   console.log( ` que representa letra: ${letra}` );
+    return letra != letra.toUpperCase() ; 
 }
 
-function acceptableUser(user){
-    for(let index = 0; index < user.length; index++){
+function acceptableUser(user , tipo){
         
-        let primeraLetra = user.charAt(index);
-        if (esMayuscula(primeraLetra) && user.length > 4  && user.length < 11 ) {
+        console.log(`El user  ${user} tiene ${user.length} caracteres y su primera letra empeiza por ${user.charAt(0)}` ); 
+        let primeraLetra = user.charAt(0);
+        if (esMayuscula(primeraLetra) && user.length > 4  && user.length < 11  && tipo == "admin" ){
             return console.log("Username valid");
         }else {
             return console.log("Username invalid");
         }
-    }
+    
 }
-
-console.log(acceptableUser("Adrian"));
+console.log(acceptableUser("adrian", "admin")); 
