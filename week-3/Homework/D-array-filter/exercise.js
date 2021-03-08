@@ -5,7 +5,7 @@
   - Finish the statement on line 11 to produce an array with valid content
   - Do not edit any of the existing code
 */
-
+// no entiendo el enunciado 
 var pairsByIndexRaw = [[0, 3], [1, 2], [2, 1], null, [1], false, "whoops"];
 
 var pairsByIndex; // Complete this statement

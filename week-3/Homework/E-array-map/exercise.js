@@ -3,3 +3,6 @@
 
 var numbers = [0.1, 0.2, 0.3, 0.4, 0.5];
 
+let a = mult => mult.map( b => b * 100 )
+
+console.log(a(numbers));
