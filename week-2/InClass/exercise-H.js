@@ -22,26 +22,4 @@ for (let number = 6; number <= 19; number++) {    //// number++ is a shortcut fo
   }
 
 
-   
-  if ( b  ){
-    r = "aaaaaa";
-   }
-   if ( r == 6 ){
-     r = "“Fizz”";
-   }
-   if ( r == 9 ){
-    r = "“Fizz”";
-   }
-   if ( r == 12 ){
-    r = "“Fizz”";
-   }
-   if ( r == 5 ){
-    r = "“Buzz”";
-   }
-   if ( r == 10 ){
-    r = "“Buzz”";
-   }
-   if ( r == 15 ){
-    r = "FizzBuzz";
-   }
-   console.log(r);
+ 
