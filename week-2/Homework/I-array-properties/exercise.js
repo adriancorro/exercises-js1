@@ -7,9 +7,9 @@
 
 function isEmpty(parametro) {
   if (parametro.length === 0  ){
-    return parametro = (parametro.length === 0 );
+    return parametro.length === 0 ;
   }else{
-    return parametro = (parametro.length === 0 );
+    return parametro.length === 0 ;
   }
    // complete this statement
 }
