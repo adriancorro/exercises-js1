@@ -14,9 +14,9 @@
 
 // forma 2
  let findLongNameThatStartsWithA = names => names.find ( cond => cond.startsWith('A') && cond.length > 7 )
+    
 
-
-
+ 
 var names = ["Rakesh", "Antonio", "Alexandra", "Andronicus", "Annam", "Mikey", "Anastasia", "Karim", "Ahmed"];
 
 var longNameThatStartsWithA = findLongNameThatStartsWithA(names);
