@@ -22,8 +22,8 @@ function abracaFunction(yourFunc) {
        return array.map(
           function c(parametroAccion){
             let asdd =  parametroAccion.toUpperCase();
-            return asdd;
-          }
+            return asdd  ;
+          } 
        )
     }
 

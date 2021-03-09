@@ -43,7 +43,7 @@ persona.bio()
 console.log(persona.nombre.apellido)
 
 
-var nombrePerzonalizado = 'altura';
+var nombrePerzonalizado = 'altura' ;
 var valorPerzonalizado = '1.75m';
 persona[nombrePerzonalizado] = valorPerzonalizado;
 console.log(persona.altura)

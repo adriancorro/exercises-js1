@@ -3,4 +3,4 @@ let resultado = años.filter(function (n){
     return n <= 2003;
 });
 
-console.log(resultado)  ; 
+console.log(resultado) ; 

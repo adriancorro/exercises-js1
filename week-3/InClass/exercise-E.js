@@ -6,13 +6,13 @@ let añoActual  = 2021;
 function a (b,x){
    return b.map  (
       function c (d){
-         return x - d
+         return x - d 
       } 
    )
 }
 
 // forma 2
-let w = (b,x) => b.map( d => x - d); 
+let w = (b,x) => b.map( d => x - d) ; 
 
 
 console.log( w (años,añoActual));

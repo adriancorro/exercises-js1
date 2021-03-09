@@ -1,5 +1,5 @@
 let class1 = ["Juan", "Emilio", "Antonio", "Fode", "Gio", "Ronar", "Adrian", "Ato", "Diego", "Jaime","a"];
-let class2 = ['Antoni','vincent', 'yogi'];
+let class2 = ['Antoni','vincent', 'yogi']  ;
 let juntos = class1.concat(class2);
 
 let todosMayuscula = juntos.map(primeraLetraenMayuscula);

@@ -1,7 +1,7 @@
 const names = ["Daniel", "James", "Irina",
 "Mozafar", "Ashleigh"];
 
-const names2 = ["Ashleigh"];
+const names2 = ["Ashleigh"]   ;
 
 
 let w = (b,x) => b.find (c =>  c == x );    

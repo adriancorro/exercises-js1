@@ -13,9 +13,9 @@ function abracaFunction(yourFunc) {
     const abracaOutput = yourFunc(abracaArray);
     
     console.log( yourFunc(abracaArray) );
-    return abracaOutput;
-    }
+    return abracaOutput ;
+    } 
 
     let x = b => b.map( x => x.toUpperCase()  )   ; 
     let a =  y => y.sort();
-    abracaFunction(x);
+    abracaFunction(x)  ;
