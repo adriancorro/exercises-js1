@@ -11,7 +11,7 @@ function capitalise(str) {
  
   return str.split(str.charAt(0)).join(str.charAt(0).toUpperCase() );
   
-}
+}  
 
 /* 
   DO NOT EDIT BELOW THIS LINE

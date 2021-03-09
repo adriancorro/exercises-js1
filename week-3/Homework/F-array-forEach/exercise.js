@@ -59,11 +59,11 @@ var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
                                               if (( EachArray % 5 ) == 0 ){
                                                 EachArray = "Buzz";
                                               } 
-                                              console.log(EachArray);
+                                              console.log(EachArray) ;
                                           } ) 
-                                        //  console.log(funcionA(arr)); 
+                                        //  console.log(funcionA(arr))  ; 
 
-/* EXPECTED OUTPUT */
+/* EXPECTED OUTPUT */ 
 
 /*
 1

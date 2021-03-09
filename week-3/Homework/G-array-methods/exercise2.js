@@ -15,7 +15,7 @@ var everyone = mentors.concat(students); // complete this statement
 
 console.log(everyone);
 
-/* 
+/*  
   EXPECTED RESULT
   ---------------
   ["Daniel", "Irina", "Rares", "Rukmini", "Abdul", "Austine", "Swathi"]

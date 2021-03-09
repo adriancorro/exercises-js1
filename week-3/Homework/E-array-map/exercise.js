@@ -8,4 +8,4 @@ let x = numbers.map(b => b * 100);
 
  console.log (typeof x);
  console.log ( x);
-console.log(a(numbers));
+console.log(a(numbers))     ;  

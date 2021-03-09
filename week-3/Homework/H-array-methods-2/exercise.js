@@ -13,7 +13,7 @@ var everyone = [
   "Abdul",
   "Austine",
   "Swathi"
-];
+];  
 
 var firstFive =  everyone.slice(0, 5) ; // complete this statement
 var lastFive =  everyone.slice(-5 ); // complete this statement

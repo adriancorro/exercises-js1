@@ -13,8 +13,8 @@ groupIsOnlyStudents = falseC;
 if (  groupIsOnlyStudents !== true ) {
   console.log("The group contains only students");
 } else {
-  console.log("The group does not contain only students");
-}
+  console.log("The group does not contain only students") ;
+}       
 
 /* EXPECTED RESULT */
 
