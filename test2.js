@@ -25,5 +25,5 @@ a("adrian", 28);
 console.log(y);
 
 for (let  i = 8; i >=0;  i = i-1 ){
-   console.log(i);
+   console.log(i) ;
 }

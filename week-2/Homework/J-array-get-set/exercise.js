@@ -19,12 +19,12 @@ function first(parametro1) {
 function last(parametro2) {
   return parametro2[parametro2.length -1]; // complete this statement
 }
-
+ 
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
 var numbers = [1, 2, 3];
-var names = ["Irina", "Ashleigh", "Mozafar", "Joe"];
+var names = ["Irina", "Ashleigh", "Mozafar", "Joe"] ;
 
 console.log(first(numbers));
 console.log(last(numbers));

@@ -18,10 +18,11 @@ function abracaFunction(yourFunc) {
 
     // forma 1
 
-    function a(b){
-       return b.map(
-          function c(d){
-            return d.toUpperCase();
+    function a(array){
+       return array.map(
+          function c(parametroAccion){
+            let asdd =  parametroAccion.toUpperCase();
+            return asdd;
           }
        )
     }
@@ -38,10 +39,7 @@ function abracaFunction(yourFunc) {
 
      let x = b =>  b.map(d=>d.toUpperCase());
 
-   abracaFunction(a);
+    abracaFunction(a);
 
    
-         
-  
-
-  
+   

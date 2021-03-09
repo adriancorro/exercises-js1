@@ -5,7 +5,7 @@ function boolChecker(bool) {
     
   }
   console.log("2");
-  return "No bool, not cool.";
+  return "No bool, not cool."; 
  
 }
 
