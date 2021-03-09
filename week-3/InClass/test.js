@@ -35,11 +35,11 @@ function tidy(namef) {
      return fgfg;
    }
  
-let f = [];
+let f = [];  
 
 for (let i = 0; i < mentors.length; i++) {
-    const tidy_mentor = tidy(mentors[i]); 
-    f.push(tidy_mentor);
+    const tidy_mentor = tidy(mentors[i]) ; 
+    f.push(tidy_mentor) ;
     }
 
     console.log (` sin callback  ${f} ` );

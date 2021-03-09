@@ -7,6 +7,6 @@ let arrayN = [100, "iSMael", 55, 45, "sANyiA", 66,
 
   let UpperCase = f(arrayN).map( n => n.toUpperCase());
 
-  console.log(f(arrayN));
-  console.log(UpperCase);
+  console.log(f(arrayN))  ;
+  console.log(UpperCase) ;
 
