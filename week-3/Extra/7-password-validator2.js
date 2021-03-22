@@ -37,6 +37,7 @@ function validatePasswords(passwords) {
                                                   newArrayTiempoReal.push(m)
                                                   let df44 = newArrayTiempoReal.filter(a =>  a == m   )
                                                    if( df44.length > 1  ){
+                                                    console.log( ` El elemento ${m} está repetido ${df44.length} veces`)
                                                     return false
                                                    }
                                                    return true 
@@ -45,6 +46,7 @@ function validatePasswords(passwords) {
                                                 newArrayTiempoReal.push(m)
                                                 let df44 = newArrayTiempoReal.filter(a => a == m )
                                                 if( df44.length > 1 ){
+                                                  console.log( ` El elemento ${m} está repetido ${df44.length} veces`)
                                                     return false
                                                    }
                                                     return false

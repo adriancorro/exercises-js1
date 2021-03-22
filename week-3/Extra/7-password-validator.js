@@ -67,7 +67,7 @@ function validatePasswords(passwords) {
     //la funcion  checkerDuplicador() va comprando si hay array duplicados
      function checkerDuplicador(pnewArrayTiempoReal){
             var repetidos = [];
-            var temporal = [];
+            var temporal = []; 
            
             pnewArrayTiempoReal.map((value,index)=>{
             temporal = Object.assign([],pnewArrayTiempoReal); //Copiado de elemento

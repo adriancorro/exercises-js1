@@ -14,7 +14,20 @@ You don't have to worry about making this algorithm work fast! The idea is to ge
 "think" like a computer and practice your knowledge of basic JavaScript.
 */
 
-function sortAges(arr) {}
+function sortAges(arr) {
+        newa = [];
+   
+       arr.map( m => {if( m >= 1 && typeof m == "number"){   newa.push(m) }  }   )
+
+     
+   let functionF =  newa.sort((a,b)=>a-b); 
+
+
+
+ 
+   return functionF
+  
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
@@ -33,7 +46,7 @@ const agesCase1 = [
   23,
   "🎖",
   "Ismeal",
-];
+]; 
 const agesCase2 = ["28", 100, 60, 55, "75", "🍕", "Elamin"];
 
 function arraysEqual(a, b) {
