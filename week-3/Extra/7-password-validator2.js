@@ -25,30 +25,51 @@ PasswordValidationResult=  [false, false, false, false, true]
 
 function validatePasswords(passwords) {
 
-  // valida si hay mayusculas , numero, simbolos, numero de caracteres. 
+  // valida si hay mayusculas 
 
   let regex =  /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&#.$($)$-$_])[A-Za-z\d$@$!%*?&#.$($)$-$_]{5,15}$/; 
-  
-   /* Con El método test() sabemos si existe la ocurrencia y Devuelve true o false.
-      Para saber hay elementos repetidos en el array debes hacer una iteraccion en tiempo real
-      por cada ocurrencia en regex.test(m) agregamos un elemento al  array newArrayTiempoReal
-      la funcion  checkerDuplicador() va comprando si hay array duplicados
-      Se llama la funcion por cada iterador del map y gracias a if( m == checkerDuplicador(newArrayTiempoReal) )
-   */
-  var newArrayTiempoReal = [];
 
-           let validator =  passwords.map( m => {  if (    regex.test(m) ){
+         
+  var repetidos = [];
+  var temporal = [];
+  var passwords2 = [];
+
+     function gf(){
+            passwords2.map((value,index)=>{
+            temporal = Object.assign([],passwords2); //Copiado de elemento
+            temporal.splice(index,1); //Se elimina el elemnto q se compara
+            /**
+             * Se busca en temporal el elemento, y en repetido para 
+             * ver si esta ingresado al array. indexOf returna
+             * -1 si el elemento no se encuetra
+             **/
+            if(temporal.indexOf(value)!=-1 && repetidos.indexOf(value)==-1)      repetidos.push(value);
+            });
+            console.log( ` 123 ---------------- ${repetidos}`)
+            return repetidos
+     }
+  
+           let ffgf =  passwords.map( m => {  if (    regex.test(m) ){
                                               
-                                                    newArrayTiempoReal.push(m)
-                                                   // se llama a la funcion por cada iterador del map checkerDuplicador() 
-                                                   if( m == checkerDuplicador(newArrayTiempoReal) ){
+                                                 passwords2.push(m)
+                                            
+                                              
+                                                 console.log( ` wue es m ${m}`)
+                                                 console.log( ` wue es p2 ${passwords2}`)
+                                                   if( m == gf() ){
+                                                    console.log( ` wue es r ${repetidos}`)
                                                     return false
                                                    }
                                                    return true 
                                                     
                                               }else{
-                                                newArrayTiempoReal.push(m)  
-                                                if( m == checkerDuplicador(newArrayTiempoReal) ){
+                                                passwords2.push(m)  
+                                            
+                                                
+                                                 console.log( ` wue es m ${m}`)
+                                                 console.log( ` wue es p2 ${passwords2}`)
+                                                if( m == gf() ){
+                                                    console.log( ` wue es r ${repetidos}`)
                                                     return false
                                                    }
                                                     return false
@@ -58,29 +79,12 @@ function validatePasswords(passwords) {
                                               
     
 
-                                                                    
-             return validator;
+                                              
+             return ffgf;
         
          
         
 }
-    //la funcion  checkerDuplicador() va comprando si hay array duplicados
-     function checkerDuplicador(pnewArrayTiempoReal){
-            var repetidos = [];
-            var temporal = [];
-           
-            pnewArrayTiempoReal.map((value,index)=>{
-            temporal = Object.assign([],pnewArrayTiempoReal); //Copiado de elemento
-            temporal.splice(index,1); //Se elimina el elemnto q se compara
-            /**
-             * Se busca en temporal el elemento, y en repetido para 
-             * ver si esta ingresado al array. indexOf returna
-             * -1 si el elemento no se encuetra
-             **/
-            if(temporal.indexOf(value)!=-1 && repetidos.indexOf(value)==-1)      repetidos.push(value);
-            });
-            return repetidos
-     }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
