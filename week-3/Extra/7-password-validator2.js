@@ -29,47 +29,22 @@ function validatePasswords(passwords) {
 
   let regex =  /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&#.$($)$-$_])[A-Za-z\d$@$!%*?&#.$($)$-$_]{5,15}$/; 
 
+  var newArrayTiempoReal = [];
          
-  var repetidos = [];
-  var temporal = [];
-  var passwords2 = [];
-
-     function gf(){
-            passwords2.map((value,index)=>{
-            temporal = Object.assign([],passwords2); //Copiado de elemento
-            temporal.splice(index,1); //Se elimina el elemnto q se compara
-            /**
-             * Se busca en temporal el elemento, y en repetido para 
-             * ver si esta ingresado al array. indexOf returna
-             * -1 si el elemento no se encuetra
-             **/
-            if(temporal.indexOf(value)!=-1 && repetidos.indexOf(value)==-1)      repetidos.push(value);
-            });
-            console.log( ` 123 ---------------- ${repetidos}`)
-            return repetidos
-     }
-  
            let ffgf =  passwords.map( m => {  if (    regex.test(m) ){
-                                              
-                                                 passwords2.push(m)
-                                            
-                                              
-                                                 console.log( ` wue es m ${m}`)
-                                                 console.log( ` wue es p2 ${passwords2}`)
-                                                   if( m == gf() ){
-                                                    console.log( ` wue es r ${repetidos}`)
+                                                // por cada ocurrencia del regex.test(m) añadimos el elemnto a un nuevo array
+                                                // Debemos hacer la comprobacion por cada elemento en tiempo real para saber si esta repetido
+                                                  newArrayTiempoReal.push(m)
+                                                  let df44 = newArrayTiempoReal.filter(a =>  a == m   )
+                                                   if( df44.length > 1  ){
                                                     return false
                                                    }
                                                    return true 
-                                                    
                                               }else{
-                                                passwords2.push(m)  
-                                            
                                                 
-                                                 console.log( ` wue es m ${m}`)
-                                                 console.log( ` wue es p2 ${passwords2}`)
-                                                if( m == gf() ){
-                                                    console.log( ` wue es r ${repetidos}`)
+                                                newArrayTiempoReal.push(m)
+                                                let df44 = newArrayTiempoReal.filter(a => a == m )
+                                                if( df44.length > 1 ){
                                                     return false
                                                    }
                                                     return false
