@@ -7,8 +7,11 @@
   - Returns an array containing only the names of the who have attended AT LEAST 8 classes
 */
 
-function eligibleStudents() {
-
+function eligibleStudents(array) {
+  let newArray = [];
+   array.map(parameterMapeoArray => {if( parameterMapeoArray[1]>= 8){newArray.push(parameterMapeoArray[0] )}});
+   console.log(newArray)
+  return newArray;
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */

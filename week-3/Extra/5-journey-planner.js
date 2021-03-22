@@ -7,8 +7,29 @@
   NOTE: only the names should be returned, not the means of transport.
 */
 
-function journeyPlanner() {
+function journeyPlanner(array, p) {
+  let newArray = [];
+  // forma 1
+    array.map( mapeo => { if (mapeo.includes(p)){newArray.push(mapeo[0]) }  } )
+    return newArray; 
+
+  // forma 2
+/* 
+   for (let i = 0; i < array.length; i++) {
+    
+    if (  array[i].includes(p) ){
+      let devolucionDeFuncion = iteradorDeArray( array[i]) ;
+      newArray.push(devolucionDeFuncion)
+    } 
+  }
+
+  return newArray; */
 }
+
+// funcion para forma 2
+function iteradorDeArray (pArray){
+  return  pArray[0] 
+} 
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 

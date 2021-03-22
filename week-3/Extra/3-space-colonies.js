@@ -8,8 +8,17 @@
   NOTE: don't include any element that is not a "family".
 */
 
-function colonisers() {
+function colonisers(array) {
+  ds = array.filter(  hj /* forma 2:   g => {  if ( g.includes("A") && g.includes("family")) { return g ;}  } */ )
+  return ds;
+}
 
+function hj(b){
+  console.log( ` que es b1 ${b}`)
+  if ( b.includes("A")  && b.includes("family")  ){  
+    console.log( ` que es b2 ${b}`)
+    return b ;
+  } 
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */

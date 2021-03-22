@@ -22,8 +22,68 @@ PasswordValidationResult=  [false, false, false, false, true]
 
 */
 
+
 function validatePasswords(passwords) {
 
+  // valida si hay mayusculas 
+
+  let regex =  /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&#.$($)$-$_])[A-Za-z\d$@$!%*?&#.$($)$-$_]{5,15}$/; 
+
+         
+  var repetidos = [];
+  var temporal = [];
+  var passwords2 = [];
+
+     function gf(){
+            passwords2.map((value,index)=>{
+            temporal = Object.assign([],passwords2); //Copiado de elemento
+            temporal.splice(index,1); //Se elimina el elemnto q se compara
+            /**
+             * Se busca en temporal el elemento, y en repetido para 
+             * ver si esta ingresado al array. indexOf returna
+             * -1 si el elemento no se encuetra
+             **/
+            if(temporal.indexOf(value)!=-1 && repetidos.indexOf(value)==-1)      repetidos.push(value);
+            });
+            console.log( ` 123 ---------------- ${repetidos}`)
+            return repetidos
+     }
+  
+           let ffgf =  passwords.map( m => {  if (    regex.test(m) ){
+                                              
+                                                 passwords2.push(m)
+                                            
+                                              
+                                                 console.log( ` wue es m ${m}`)
+                                                 console.log( ` wue es p2 ${passwords2}`)
+                                                   if( m == gf() ){
+                                                    console.log( ` wue es r ${repetidos}`)
+                                                    return false
+                                                   }
+                                                   return true 
+                                                    
+                                              }else{
+                                                passwords2.push(m)  
+                                            
+                                                
+                                                 console.log( ` wue es m ${m}`)
+                                                 console.log( ` wue es p2 ${passwords2}`)
+                                                if( m == gf() ){
+                                                    console.log( ` wue es r ${repetidos}`)
+                                                    return false
+                                                   }
+                                                    return false
+                                               } } ); 
+         
+                                             
+                                              
+    
+
+                                              
+             return ffgf;
+        
+         
+        
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */

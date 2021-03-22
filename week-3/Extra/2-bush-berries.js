@@ -10,8 +10,19 @@
   Use the tests to confirm which message to return
 */
 
-function bushChecker() {
+function bushChecker(array) {
+  let msg   ;
+  array.filter( a => {   if (a !== "pink" ){
+  
+      msg = "Toxic! Leave bush alone!"
+     } else {
+      msg = "Bush is safe to eat from" 
+     } }    )
 
+    //console.log( aa)
+
+     return msg;
+  
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
